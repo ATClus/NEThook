@@ -1,0 +1,11 @@
+@NEThook_HostAddress = http://localhost:23049
+
+GET {{NEThook_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{NEThook_HostAddress}}/todos/1
+Accept: application/json
+
+###
