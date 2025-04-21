@@ -4,7 +4,8 @@ public static class StsUserEventRoutes
 {
     public static WebApplication RegisterEvent(this WebApplication app)
     {
-        var group = app.MapGroup("/sts/user/event");
+        var group = app.MapGroup("/sts/user/event")
+            .RequireAuthorization();
 
         group.MapPost("/register", () => Results.Ok());
 
