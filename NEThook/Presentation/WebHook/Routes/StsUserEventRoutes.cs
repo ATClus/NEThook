@@ -6,7 +6,6 @@ public static class StsUserEventRoutes
     {
         var group = app.MapGroup("/sts/user/event");
 
-        // mapeia o endpoint POST /sts/user/event/register
         group.MapPost("/register", () => Results.Ok());
 
         return app;

@@ -1,0 +1,7 @@
+﻿services:
+  nethook:
+    image: nethook
+    build:
+      context: .
+      dockerfile: NEThook/Dockerfile
+
